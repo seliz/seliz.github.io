@@ -1,0 +1,22 @@
+<div class="timer" [ngClass]="checkOrientation()">
+  <div class="counter" [ngClass]="checkOrientation()">
+    {{ daysToDday }} day(s), {{ hoursToDday }}h, {{ minutesToDday }}m,
+    {{ secondsToDday }}s
+  </div>
+</div>
+<mat-form-field
+  appearance="outline"
+  class="form"
+  [ngClass]="checkOrientation()"
+>
+  <mat-label>Date</mat-label>
+  <input
+    readonly
+    matInput
+    [matDatepicker]="picker"
+    [(ngModel)]="dDay"
+    (ngModelChange)="saveValue($event); resizeCounter()"
+  />
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>

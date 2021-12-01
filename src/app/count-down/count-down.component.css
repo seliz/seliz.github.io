@@ -1,0 +1,56 @@
+.counter.portrait {
+  position: absolute;
+  left: 10px;
+  top: 348px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  color: #ce9ca8;
+  white-space: nowrap;
+  line-height: 49px;
+}
+
+.counter.landscape {
+  position: absolute;
+  left: 20px;
+  top: 149px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 76.7px;
+  color: #ce9ca8;
+  white-space: nowrap;
+  line-height: 104px;
+}
+
+.timer.portrait {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+}
+
+.timer.landscape {
+  position: absolute;
+  width: 764px;
+  height: 104px;
+}
+
+.form.portrait {
+  position: absolute;
+  width: 294px;
+  top: 713px;
+  left: 48px;
+  color: white;
+  font-size: 16px;
+}
+
+.form.landscape {
+  position: absolute;
+  width: 300px;
+  height: 67px;
+  left: 436px;
+  top: 283px;
+  color: white;
+  font-size: 16px;
+}

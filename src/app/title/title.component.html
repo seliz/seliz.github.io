@@ -1,0 +1,21 @@
+<div class="container" [ngClass]="checkOrientation()">
+  <div
+    class="title"
+    [ngClass]="checkOrientation()"
+    style="font-size: {{ titleFontSize }}"
+  >
+    Time to {{ titleName }}
+  </div>
+</div>
+<mat-form-field
+  appearance="outline"
+  class="form"
+  [ngClass]="checkOrientation()"
+>
+  <mat-label>Title</mat-label>
+  <input
+    matInput
+    [(ngModel)]="titleName"
+    (ngModelChange)="saveValue($event); resizeTitle()"
+  />
+</mat-form-field>
